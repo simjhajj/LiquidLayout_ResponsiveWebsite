@@ -1,0 +1,428 @@
+/* style for whole page */
+*{
+    border: 0;
+    margin:0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+/* Style for Cadbury Image */
+.background{
+    width: 100%;
+    height: 20%;
+}
+
+/* Style for container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45, 10, 81);
+    padding: 10px;
+}
+
+/* Style for Logo */
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/* Style for Navigation Bar */
+.navigationBar{
+    position: relative;
+    float: right;
+}
+
+/* Style for Navigation List */
+.navigationBar ul{
+    list-style-type: none;
+}
+
+/* Style for Navigation List's li */
+.navigationBar ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Style for Navigation List A tag */
+.navigationBar ul li a{
+    font-size: 120%;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Style for Navigation List A:hover */
+.navigationBar ul li a:hover{
+    color: rgb(255, 221, 129);
+}
+
+/* Style for burger icon */
+.burger-icon {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Style for website when max-width: 720px */
+@media only screen and (max-width: 720px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navigationBar {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color:  rgb(45, 10, 81);
+        z-index: 1;
+    }
+
+    .navigationBar ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .navigationBar ul li {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid  rgb(45, 10, 81);
+    }
+
+    .navigationBar ul li:last-child {
+        border-bottom: none;
+    }
+
+    .burger-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+  
+/* Style for Content  */
+.content-container{
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Style for NewCreation */
+.newCreation{
+    color:  rgb(69, 10, 124);
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Style for description1 */
+.description1{
+    text-align: center;
+}
+
+/* Style for container box */
+.containers-box{
+    margin-top: 70px;
+}
+
+/* style for containers */
+.containers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Style for chocolate images */
+.chocoImage{
+    margin: 30px;
+}
+
+/* Style for chocolate Box */
+.chocolateBox{
+    background-color:  rgb(53, 8, 96);
+    border-radius: 5px;
+}
+
+/* Style for chocolate bars */
+.chocoBars{
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* Style when max-width is 720px*/
+@media only screen and (max-width: 720px) {
+
+    .containers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .chocoImage{
+        margin: 30px;
+    }
+    
+    .chocolateBox{
+        background-color:  rgb(53, 8, 96);
+        border-radius: 5px;
+    }
+    
+    .chocoBars{
+        padding: 30px;
+        color: white;
+        text-align: center;
+    }
+    
+}
+
+/* Style when max-width is 480px */
+@media only screen and (max-width: 480px) {
+
+    .containers{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    
+    .chocoImage{
+        margin: 30px;
+    }
+    
+    .chocolateBox{
+        background-color:  rgb(53, 8, 96);
+        border-radius: 5px;
+    }
+    
+    .chocoBars{
+        padding: 30px;
+        color: white;
+        text-align: center;
+    }
+    
+}
+
+/* Style for section2 */
+.section2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.section2 > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    grid-row: 1 / span 2; 
+}
+
+.thankyou{
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.thanks{
+    color: white;
+    padding: 200px 20px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(53, 8, 96) ;
+    grid-row: 1; 
+    margin: 0;
+}
+
+/* Style when max-width: 720px */
+@media only screen and (max-width: 720px) {
+
+    .section2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+    .section2 > div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img-container {
+        grid-row: 1 / span 2; 
+    }
+    
+    .thankyou{
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    
+    .thanks{
+        color: white;
+        padding: 200px 20px;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(53, 8, 96) ;
+        grid-row: 1; 
+        margin: 0;
+    }
+    
+}
+
+/* Style for footer */
+.footer{
+    background-color:  rgb(53, 8, 96);
+    position: relative;
+}
+
+/* STyle for image in footer */
+.glassImg{
+    margin-left: 80%;
+    transform: translateX(-50%);
+    width: auto; 
+    max-width: 100%; 
+}
+
+/* Style for footerDetails */
+.footerDetails{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Style for brands */
+.brands{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Style for icons */
+.icons{
+    color: rgb(53, 8, 96);
+    font-size: 30px;
+    margin-left: 10px;
+    margin: 0;
+    padding: 8px;
+}
+
+/* Style for hovering over icons */
+.icons:hover{
+    font-size: 35px;
+}
+
+/* Style for horizontal line */
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color: rgb(53, 8, 96);
+    height: 1px;
+    margin-top: 20px;
+  }
+
+/* Style for footer links */
+.footerLinks{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Style for copyright text */
+.copyright{
+    margin-right: auto;
+    color: rgb(53, 8, 96);
+}
+
+/* Style for footerList */
+.footerList {
+    display: flex;
+    list-style-type: none;
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footerList li a {
+    text-decoration: none;
+}
+
+.afooter {
+    margin-right: 5px;
+}
+
+.afooter a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-left: 10px;
+}
+
+/* Style when max-width 720px */
+@media only screen and (max-width: 720px) {
+
+    .section2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+    .section2 > div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img-container {
+        grid-row: 1 / span 2; 
+    }
+    
+    .thankyou{
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    
+    .thanks{
+        color: white;
+        padding: 200px 20px;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(53, 8, 96) ;
+        grid-row: 1; 
+        margin: 0;
+    }
+    
+}
+
+
+/* Style when max-width 720px */
+@media only screen and (max-width: 720px) {
+
+    .footerList{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerList li{
+        padding: 15px;
+    }
+    
+}
