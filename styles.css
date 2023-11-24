@@ -426,3 +426,47 @@ hr {
     }
     
 }
+
+.quick-contact-form {
+    flex: 1;
+    padding: 0 20px;
+    background-color: #a3a4f5;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3e4095;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #1a1c4e;
+}
